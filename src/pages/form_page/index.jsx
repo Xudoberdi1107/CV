@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import style from "./style.module.scss"
-
+//iokojookok
 function MakeCv() {
   const [file, setFile] = useState();
   function handleChangeimg(e) {
