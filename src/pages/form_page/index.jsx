@@ -1,4 +1,3 @@
-import {useForm} from 'react-hook-form'
 import { PlusOutlined, LoadingOutlined } from '@ant-design/icons';
 import { Upload, message } from 'antd';
 import { useState } from 'react';
@@ -19,7 +18,6 @@ const beforeUpload = (file) => {
   return isJpgOrPng && isLt2M;
 };
 function MakeCv() {
-const {register, handleSubmit} = useForm()
 const [loading, setLoading] = useState(false);
 const [imageUrl, setImageUrl] = useState();
 const handleChange = (info) => {
@@ -46,13 +44,13 @@ const uploadButton = (
     </div>
   </div>);
     return(
-        <form action="" onChange={handleSubmit}>
+        <form action="">
              <Upload
         name="avatar"
         listType="picture-card"
         className="avatar-uploader"
         showUploadList={false}
-        action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+        action=""
         beforeUpload={beforeUpload}
         onChange={handleChange}
       >
@@ -69,20 +67,48 @@ const uploadButton = (
         )}
       </Upload>
             <label htmlFor="name">First name*</label>
-            <input type="text" {...register("name")} placeholder='Enter your name'/>
+            <input type="text" name="name" id='name' placeholder='Enter your name'/>
             <label htmlFor="surname">Last name*</label>
-            <input type="text" {...register("surname")} placeholder='Enter your surname'/>
-            <label htmlFor="surname">Email address*</label>
-            <input type="text" {...register("surname")} placeholder='Enter your email'/>
-            <label htmlFor="surname">Phone number*</label>
-            <input type="text" {...register("surname")} placeholder='Enter your phone number'/>
+            <input type="text" name="surname" id='surname' placeholder='Enter your surname'/>
+            <label htmlFor="email">Email address*</label>
+            <input type="text" name="email" id='email' placeholder='Enter your email'/>
+            <label htmlFor="phone">Phone number*</label>
+            <input type="text" name="phone" id='phone' placeholder='Enter your phone number'/>
             <label htmlFor="address">Address*</label>
-            <input type="text" {...register("address")} placeholder='Enter your address'/>
+            <input type="text" name="address" id='address' placeholder='Enter your address'/>
             <label htmlFor="zip_code">Zip code*</label>
-            <input type="text" {...register("zip_code")} placeholder='Enter your zip_code'/>
+            <input type="text" name="zip_code" id='zip_code' placeholder='Enter your zip_code'/>
             <label htmlFor="city">City/Town*</label>
-            <input type="text" {...register("city")} placeholder='Enter your city'/>
+            <input type="text" name="city" id='city' placeholder='Enter your city'/>
+            <div>
+              <label htmlFor="date">Date of birth</label>
+              <select name="" id="">
+                <option value="n">m</option>
+              </select>
+              <select name="" id="">
+                <option value="n">m</option>
+              </select>
+              <select name="" id="">
+                <option value="n">m</option>
+              </select>
+              <label htmlFor="place">Place of birth</label>
+              <input type="text" name="place" id="place"/>
+              <label htmlFor="prava">Driving licence</label>
+              <input type="text" name="prave" id="prava"/>
+              <label htmlFor="gender">Gender</label>
+              <select name="gender" id="gender">
+                <option value="select">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+              <label htmlFor="millat">Nationality</label>
+              <input type="text" name='millat' id='millat' />
+              <label htmlFor="level">Marital status</label>
+              <input type="text" name='level' id='level' />
+              <label htmlFor="account">Account</label>
+              <input type="text" name='account' id='account'  />
+            </div>
         </form>
     )
-}
+        }
 export default MakeCv
