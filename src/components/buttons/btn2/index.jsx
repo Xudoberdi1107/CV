@@ -1,6 +1,6 @@
 function Btn2() {
     return(
-        <button>send</button>
+        <button >send</button>
     )
 }
 

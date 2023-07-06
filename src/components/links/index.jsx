@@ -1,0 +1,1 @@
+export {default as LinkToBtn1} from "./link1/index"
