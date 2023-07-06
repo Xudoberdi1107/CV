@@ -1,7 +1,5 @@
-
 import { useState } from 'react';
 import style from "./style.module.scss"
-//iokojookok
 function MakeCv() {
   const [file, setFile] = useState();
   function handleChangeimg(e) {
@@ -11,8 +9,10 @@ function MakeCv() {
     return(
        <div className={style.card}>
          <form action="">
+         <div>
          <input type="file" onChange={handleChangeimg} />
             <img src={file} />
+         </div>
             <label htmlFor="name">First name*</label>
             <input type="text" name="name" id='name' placeholder='Enter your name'/>
             <label htmlFor="surname">Last name*</label>
