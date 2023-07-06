@@ -1,5 +1,5 @@
 import bb from "./style.module.scss"
-function Btn1({text}) {
+function Btn1(text) {
     return(
         <div>
 
