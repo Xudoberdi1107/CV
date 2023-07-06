@@ -1,12 +1,135 @@
 .Home{
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    // gap: 20px;
+}
+
+.header{
+    width: 100%;
+    min-height: 90vh;
     background-color: #DEECEC;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    color: #444A66;
+    padding: 0px 10% 20px;
+    flex-wrap: wrap;
+    h1{
+        font-size: 40px;
+    }
+}
+.div_box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_text{
+    width: 45%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+}
+.header_img{
+    width: 25%;
+}
+.carts{
+    width: 100%;
+    padding: 50px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.cart{
+    width: 60%;
+    -webkit-box-shadow: 0 13px 16px 2px #ddd;
+    -moz-box-shadow: 0 13px 16px 2px #ddd;
+    box-shadow: 0 13px 16px 2px #ddd;
+    border-radius: 20px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+    color: #444444;
+    .cart_img_title{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        img{
+            width: 20%;
+            
+        }
+    }
+    .cart_star{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+        li{
+            color: gold;
+        }
+    }
+}
+.section_ikki{
+    width: 100%;
+    padding: 20px 20% 70px;
+    background-color: #DEECEC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.section_ikki_box{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
     color: #444A66;
+    h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 18px;
+    }
+}
+footer{
+    width: 100%;
+    padding: 10px 20%;
+    background-color: #444A66;
+    color: white;
+    p{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        a{
+            color: white;
+            text-decoration: underline;
+        }
+    }
+}
+@media (max-width:700px) {
+    .cart{
+        width: 100%;
+    }
     
 }
