@@ -2,6 +2,7 @@ import { LinkToBtn1 } from "../../components/links";
 import { FaStar, FaMagic, FaList, FaCode } from "react-icons/fa";
 import h from "./style.module.scss";
 import NavBar from "../../components/navbar";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -12,6 +13,8 @@ function Home() {
           <div className={h.header_text}>
             <h1>Special free site for CV preparation</h1>
             <LinkToBtn1 href={"form"} name={"Create your Resume"} />
+            <Link to={"/style_pages"}>  style </Link>
+
           </div>
           <div className={h.header_img}>
             <img src="./img/img.jpg" alt="img" />

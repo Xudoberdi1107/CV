@@ -1,8 +1,13 @@
-function Style() {
+import m from "./style.module.scss"
+
+
+function ModeStyle() {
     return(
-        <h1><Style>page</Style></h1>
+        <div className={m.ModeStyle}>
+
+        </div>
     )
 }
 
-export default Style;
+export default ModeStyle;
 
