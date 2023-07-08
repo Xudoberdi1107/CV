@@ -13,7 +13,6 @@ function Home() {
           <div className={h.header_text}>
             <h1>Special free site for CV preparation</h1>
             <LinkToBtn1 href={"form"} name={"Create your Resume"} />
-            <Link to={"/style_pages"}>  style </Link>
 
           </div>
           <div className={h.header_img}>

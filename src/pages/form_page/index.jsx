@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import style from "./style.module.scss"
 import { useForm } from 'react-hook-form';
-import { FaPlus } from "react-icons/fa"
-import { Link } from 'react-router-dom';
+import { FaPlus, FaMinus } from "react-icons/fa"
+import Cursor from "../../components/cursor/index"
 function MakeCv() {
   const { register, handleSubmit, setValue } = useForm();
 
@@ -82,8 +82,9 @@ function MakeCv() {
   }
   let year = getYear(2012)
   return (
+   <>
+    <Cursor back={"/form"} next={"/style_pages"}/>
     <div className={style.card}>
-      <Link to={"/"}>k</Link>
       <h1 className={style.card__head}>Personal details</h1>
       <hr />
     
@@ -186,11 +187,12 @@ function MakeCv() {
           <div> <label htmlFor="account">Account</label>
             <input {...register('account')} type="text" id='account' /></div>
         </div>
-        <label htmlFor="chek" className={style.card__bottom__add}>{<FaPlus/>} Additional information</label>
+        <label htmlFor="chek" className={style.card__bottom__add}>{<FaPlus className={style.card__plus}/>} {<FaMinus className={style.card__minus}/>} Additional information</label>
        </div>
         <button type='submit' className={style.card__btn}>Submit</button>
       </form>
     </div>
+   </>
   )
 }
 export default MakeCv
