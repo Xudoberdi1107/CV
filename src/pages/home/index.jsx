@@ -91,11 +91,7 @@ function Home() {
       </section>
       <footer>
         <p>
-          {" "}
-          2023 {<FaCode />} This website created by{" "}
-          <a href={"https://www.albison.uz/"} target="_blank">
-            Albison students
-          </a>
+          2023 {<FaCode />} This website created by <a href="https://albison.uz/" target="blank">Albison students</a>
         </p>
       </footer>
     </div>
