@@ -1,4 +1,20 @@
 .ModeStyle{
     width: 100%;
+    min-height: 100vh;
+    background-color: #DEECEC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.navbar_div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: red;
+}
+.karusel{
+    width: 40%;
+    padding: 20px;
 }

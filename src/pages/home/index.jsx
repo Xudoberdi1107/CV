@@ -1,5 +1,5 @@
 import { LinkToBtn1 } from "../../components/links";
-import { FaStar, FaMagic, FaList, FaCode } from "react-icons/fa";
+import { FaStar, FaMagic, FaList, FaCode, FaPlus } from "react-icons/fa";
 import h from "./style.module.scss";
 import NavBar from "../../components/navbar";
 import { Link } from "react-router-dom";
@@ -93,7 +93,7 @@ function Home() {
         <p>
           {" "}
           2023 {<FaCode />} This website created by{" "}
-          <a href={"https://www.albison.uz/"} target="_blank">
+          <a href={"https://www.albison.uz/"} target="blank">
             Albison students
           </a>
         </p>
