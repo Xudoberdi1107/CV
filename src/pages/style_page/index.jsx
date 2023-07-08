@@ -7,7 +7,7 @@ function ModeStyle() {
   return (
     <div className={m.ModeStyle}>
       <div className={m.navbar_div}>
-        <Cursor />
+        <Cursor back={"/"} next={"/"} />
         {/* <h1>f</h1> */}
       </div>
       <div className={m.karusel}>
